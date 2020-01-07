@@ -5125,6 +5125,15 @@ public final class Settings {
         private static final Validator STATUS_BAR_FILE_HEADER_IMAGE_VALIDATOR =
                 ANY_STRING_VALIDATOR;
 
+        /**
+         * Whether to blur behind QS
+         * @hide
+         */
+        public static final String QS_BACKGROUND_BLUR = "qs_background_blur";
+
+        /** @hide */
+        private static final Validator QS_BACKGROUND_BLUR_VALIDATOR = BOOLEAN_VALIDATOR;
+
 	/**
          * Controls whether to show R style notification headers
          * @hide
@@ -5278,6 +5287,7 @@ public final class Settings {
             NOTIFICATION_HEADERS,
             QS_PANEL_BG_USE_NEW_TINT,
             QS_PANEL_BG_ALPHA
+            QS_BACKGROUND_BLUR,
         };
 
         /**
@@ -5626,6 +5636,7 @@ public final class Settings {
             VALIDATORS.put(NOTIFICATION_HEADERS, NOTIFICATION_HEADERS_VALIDATOR);
             VALIDATORS.put(QS_PANEL_BG_USE_NEW_TINT, QS_PANEL_BG_USE_NEW_TINT_VALIDATOR);
             VALIDATORS.put(QS_PANEL_BG_ALPHA, QS_PANEL_BG_ALPHA_VALIDATOR);
+            VALIDATORS.put(QS_BACKGROUND_BLUR, QS_BACKGROUND_BLUR_VALIDATOR);
         }
 
         /**
