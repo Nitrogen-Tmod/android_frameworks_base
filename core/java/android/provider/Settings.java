@@ -5286,8 +5286,8 @@ public final class Settings {
             STATUS_BAR_FILE_HEADER_IMAGE,
             NOTIFICATION_HEADERS,
             QS_PANEL_BG_USE_NEW_TINT,
-            QS_PANEL_BG_ALPHA
-            QS_BACKGROUND_BLUR,
+            QS_PANEL_BG_ALPHA,
+            QS_BACKGROUND_BLUR
         };
 
         /**

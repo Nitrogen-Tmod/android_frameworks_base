@@ -1108,7 +1108,10 @@ public class StatusBar extends SystemUI implements DemoMode,
                 Settings.System.QS_BACKGROUND_BLUR, 0) != 0;
     }
 
-    
+    protected QS createDefaultQSFragment() {
+	            return FragmentHostManager.get(mStatusBarWindow).create(QSFragment.class);
+		        }
+
     private void setUpPresenter() {
         // Set up the initial notification state.
         mActivityLaunchAnimator = new ActivityLaunchAnimator(
